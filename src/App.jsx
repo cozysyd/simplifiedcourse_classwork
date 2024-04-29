@@ -1,5 +1,7 @@
+import Counter from "./Counter";
+
 function App() {
-  return <div>Hello World</div>;
+  <Counter />;
 }
 
 export default App;
