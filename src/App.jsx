@@ -1,5 +1,13 @@
+import { useState } from "react";
+
 function App() {
-  return <h1>Hello, world!</h1>;
+  const [count, setCount] = useState(0);
+
+  function counter() {
+    setCount(count + 1);
+  }
+
+  return <h1 onClick={counter}>Counter: {count}</h1>;
 }
 
 export default App;
